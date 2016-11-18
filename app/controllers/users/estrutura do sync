@@ -1,0 +1,12 @@
+estrutura do sync
+
+
+profile {dados user logado}
+categories {todas as categorias}
+
+professionals{
+	{
+		name:
+		categories:1,2,3
+	},
+}

@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @service.user
+%p
+  %b Category:
+  = @service.category
+
+= link_to 'Edit', edit_service_path(@service)
+\|
+= link_to 'Back', services_path

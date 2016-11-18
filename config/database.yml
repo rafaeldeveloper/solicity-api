@@ -1,0 +1,26 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  schema_search_path: 'public'
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+
+development:
+  <<: *default
+  host: '127.0.0.1'
+  database: solicite-service  
+  username: pguser
+  password: rafa
+
+
+test: &test
+  <<: *default
+  host: '127.0.0.1'
+  database: solicite-service-test
+  username: pguser
+  password: rafa
+
+cucumber:
+  <<: *test
+
