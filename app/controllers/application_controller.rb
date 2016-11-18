@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   # acts_as_token_authentication_handler_for User
-  # before_action :check_token
+  before_action :check_token
 
   respond_to :json,:html
 

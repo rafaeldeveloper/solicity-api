@@ -12863,3 +12863,31 @@ Processing by MessagesController#set_app_id as */*
 Completed 200 OK in 75ms (Views: 0.4ms | ActiveRecord: 26.9ms)
 
 
+Started GET "/" for 127.0.0.1 at 2016-11-18 10:19:03 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 349ms (Views: 347.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/register" for 127.0.0.1 at 2016-11-18 10:19:09 -0300
+Processing by MessagesController#set_app_id as */*
+  Parameters: {"user_id"=>"1", "app_id"=>"2", "message"=>{"user_id"=>"1", "app_id"=>"2"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-18 10:21:56 -0300
+Processing by HomeController#index as HTML
+Filter chain halted as :check_token rendered or redirected
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-18 10:22:00 -0300
+Processing by HomeController#index as HTML
+Filter chain halted as :check_token rendered or redirected
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
