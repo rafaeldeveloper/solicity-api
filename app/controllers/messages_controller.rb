@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-
+  skip_before_filter :check_token
 	def set_app_id
 		user = User.find(params[:user_id])
 		if user
