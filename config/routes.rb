@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   	 get '/sync', to: 'users/sessions#sync'
   end	
 
-  get '/register', to: 'messages#set_app_id'
+  post '/register', to: 'messages#set_app_id'
 
   root 'home#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
