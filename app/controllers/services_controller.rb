@@ -50,7 +50,7 @@ class ServicesController < ApplicationController
     if @service.save
       render :json=> {:success=>true, :service=>@service}  
     else
-      render :json => {:success=>false, :message=>"failure on atribuy category to suer"}, :status=>200
+      render :json => {:success=>false, :message=>"failure on atribuy category to user"}, :status=>200
     end
   end
 

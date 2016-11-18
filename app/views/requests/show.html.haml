@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @request.user
+%p
+  %b Description:
+  = @request.description
+%p
+  %b Professional:
+  = @request.professional_id
+
+= link_to 'Edit', edit_request_path(@request)
+\|
+= link_to 'Back', requests_path
